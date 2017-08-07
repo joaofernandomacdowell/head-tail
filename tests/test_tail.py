@@ -50,3 +50,9 @@ class TestTail(unittest.TestCase):
         args_list = args_list = ["tail.py", "happy-song-short.txt", "-r"]
 
         self.assertEqual(tail_command(args_list), expected_rows)
+
+    def test_should_return_cannot_combine_n_with_r(self):
+        expected_msg = "Cannot combine -n with -r\n"
+        args_list = ["tail.py", "-r", "-n", "5", "happy-song.txt"]
+
+        self.assertEqual(tail_command(args_list), expected_msg)

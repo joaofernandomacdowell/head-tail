@@ -14,6 +14,9 @@ def tail_command(list_args):
     args = parser.parse_args(list_args[1:])
     number_of_rows = args.n
 
+    if '-n' in list_args and '-r' in list_args:
+        return "Cannot combine -n with -r\n"
+
     if args.r:
         filexpto = open(args.file_name, "r")
         rows = filexpto.readlines()
