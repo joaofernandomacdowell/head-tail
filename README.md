@@ -1,6 +1,6 @@
 ## Head and Tail
 
-Little python challenge to reproduce the UNIX commands: head and tail and your
+Little python challenge to reproduce the UNIX commands: head, tail and your
 options -n and -r.
 
 These scripts should read a file as input. Examples:
