@@ -20,7 +20,7 @@ class TestTail(unittest.TestCase):
 
         self.assertEqual(tail_command(args_list), expected_rows)
 
-    def test_should_return_five_last_rows_using_n_flag(self):
+    def test_should_return_last_five_rows_using_n_flag(self):
         expected_rows = [
             "S.P.I.R.I.T.\n",
             "Spirit, let's hear it (well, that's the spirit)\n",
